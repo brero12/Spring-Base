@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+zuul:
+  sslHostnameValidationEnabled: false 
+  sensitiveHeaders: Cookie,Set-Cookie
+  ignoreSecurityHeaders: false
+  routes:
+    ws:
+      path: /ws/**
+      sensitiveHeaders:
+      url: http://localhost:8080
+    frontapp:
+      path: /**
+      url: http://localhost:8081
