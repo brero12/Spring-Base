@@ -20,4 +20,5 @@ http://localhost:8080/swagger-ui.html
 To try:
 
 Original path:  http://ec2-18-223-117-185.us-east-2.compute.amazonaws.com:8081/swagger-ui.html
+
 Behind zuul gateway: http://ec2-18-223-117-185.us-east-2.compute.amazonaws.com/ws/swagger-ui.html
